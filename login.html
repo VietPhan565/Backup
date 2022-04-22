@@ -1,91 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Base Account</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,400italic,700,700italic,400italic,300italic&amp;subset=vietnamese,latin"
-    />
-    <link rel="stylesheet" href="css/login.css" />
-  </head>
-  <body>
-    <div id="master">
-      <div id="page">
-        <div class="login">
-          <div class="box-wrap">
-            <div class="logo-base">
-              <a href="https://base.vn">
-                <img
-                  src="https://share-gcdn.basecdn.net/brand/logo.full.png"
-                  alt="Logo base"
-                />
-              </a>
-            </div>
-            <div class="form-login">
-              <h1>Login</h1>
-              <div class="sub-title">Welcome back. Login to start working.</div>
-              <div class="form">
-                <div class="row">
-                  <div class="label">Email</div>
-                  <div class="input">
-                    <input type="text" name="email" placeholder="Your email" />
-                  </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Base Account</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:500,400,300,400italic,700,700italic,400italic,300italic&amp;subset=vietnamese,latin" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+
+<body>
+  <div id="master">
+    <div id="page">
+      <div class="login">
+        <div class="box-wrap">
+          <div class="logo-base">
+            <a href="https://base.vn">
+              <img src="https://share-gcdn.basecdn.net/brand/logo.full.png" alt="Logo base" />
+            </a>
+          </div>
+          <div class="form-login">
+            <h1>Login</h1>
+            <div class="sub-title">Welcome back. Login to start working.</div>
+            <div class="form">
+              <div class="row">
+                <div class="label">Email</div>
+                <div class="input">
+                  <input type="text" name="email" placeholder="Your email" />
                 </div>
-                <div class="row">
+              </div>
+              <div class="row">
+                <div class="label">
+                  <span class="forgot-pass" onclick="forgotPassword()">Forget your password?</span>
+                  Password
+                </div>
+                <div class="input">
+                  <input type="password" name="password" placeholder="Your password" />
+                </div>
+              </div>
+              <div class="row">
+                <input type="hidden" />
+              </div>
+              <div class="row">
+                <input type="hidden" />
+              </div>
+              <div class="row relative">
+                <div class="checkbox">
+                  <input type="checkbox" name="checkbox" />&nbsp;Keep me
+                  logged in
+                </div>
+                <div class="button" onclick="">Login to start working</div>
+                <div class="oauth">
                   <div class="label">
-                    <span class="forgot-pass" onclick="forgotPassword()"
-                      >Forget your password?</span
-                    >
-                    Password
+                    <span>Or, login via single sign-on</span>
                   </div>
-                  <div class="input">
-                    <input
-                      type="password"
-                      name="password"
-                      placeholder="Your password"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <input type="hidden" />
-                </div>
-                <div class="row">
-                  <input type="hidden" />
-                </div>
-                <div class="row relative">
-                  <div class="checkbox">
-                    <input type="checkbox" name="checkbox" />&nbsp;Keep me
-                    logged in
-                  </div>
-                  <div class="button" onclick="">Login to start working</div>
-                  <div class="oauth">
-                    <div class="label">
-                      <span>Or, login via single sign-on</span>
-                    </div>
-                    <a class="oauth-login left" href="#"> Login with Google </a>
-                    <a class="oauth-login left" href="#">
-                      Login with Microsoft
-                    </a>
-                    <a class="oauth-login right" href="#"> Login with SAML </a>
-                  </div>
+                  <a class="oauth-login left" href="#"> Login with Google </a>
+                  <a class="oauth-login left" href="#">
+                    Login with Microsoft
+                  </a>
+                  <a class="oauth-login right" href="#"> Login with SAML </a>
                 </div>
               </div>
             </div>
-            <div class="register">
-              <div class="sign-up">
-                <a class="new-acc" href="register.html">
-                  Don't have an account, <strong>Sign up</strong> to login
-                </a>
-              </div>
+          </div>
+          <div class="register">
+            <div class="sign-up">
+              <a class="new-acc" href="register.html">
+                Don't have an account, <strong>Sign up</strong> to login
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="js/login.js"></script>
-  </body>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+
 </html>
