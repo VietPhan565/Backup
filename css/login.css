@@ -2,7 +2,9 @@ body {
     margin: 0px;
 }
 
-#master {}
+#master {
+    
+}
 
 #master::after {
     content: "";
@@ -106,6 +108,7 @@ body {
     color: white;
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .oauth {
@@ -130,6 +133,7 @@ body {
 
 .oauth .label span {
     position: relative;
+    background-color: #ffffff;
     color: #aaa;
 }
 
