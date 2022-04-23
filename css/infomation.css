@@ -1,15 +1,63 @@
-body{
-    position:relative;
-}
-#panel.base-panel{
-    width: 100px;
-}
-
-#panel{
+#base-panel{
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     top: 0px;
     left: 0px;
     height: 100%;
-    background-color: black;
-    transition-property: all;
+    width: 80px;
+    background-color: #211c23;
+}
+
+#base-panel .items .item{
+    padding: 5px 0px;
+    text-align: center;
+}
+
+#base-panel .item .image{
+    height: 51px;
+    overflow: hidden;
+    padding: 0;
+}
+
+#base-panel .item .inner{
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#base-panel .item .image img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.items .item .icon{
+    padding: 10px 0px 3px;
+}
+
+.item .icon span{
+    background-color: #888;
+    border-radius: 16px;
+}
+
+.info{
+    padding-bottom: 20px;
+}
+
+.info span{
+    padding: 0 8px 15px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #888;
+}
+
+.footer{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
 }
