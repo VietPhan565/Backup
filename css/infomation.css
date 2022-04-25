@@ -1,10 +1,11 @@
-head, body{
+head,
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     height: 100%;
 }
 
-#base-panel{
+#base-panel {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -13,11 +14,11 @@ head, body{
     width: 90px;
 }
 
-#base-panel .items{
+#base-panel .items {
     position: relative;
 }
 
-#base-panel .item{
+#base-panel .item {
     text-align: center;
     padding: 5px 0px;
     cursor: pointer;
@@ -25,18 +26,18 @@ head, body{
     color: rgba(255, 255, 255, 0.3);
 }
 
-#base-panel .image{
+#base-panel .image {
     height: 51px;
 }
 
-#base-panel .image .inner{
+#base-panel .image .inner {
     width: 32px;
     height: 32px;
     margin: auto;
     margin-top: 10px;
 }
 
-#base-panel .image .inner img{
+#base-panel .image .inner img {
     width: 32px;
     height: 32px;
     border-radius: 16px;
@@ -44,12 +45,64 @@ head, body{
     background-color: #fff;
 }
 
-#base-panel .item .icon{
+#base-panel .item .icon {
     padding: 8px 0px;
     margin-bottom: 3px;
 }
 
-#base-panel .item .info{
+#base-panel .item .info {
     padding: 0px 5px 12px;
     font-size: 14px;
+}
+
+#base-panel .footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+#document{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 100;
+}
+
+#master{
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 90px;
+    bottom: 0;
+    z-index: 1000;
+}
+
+#pagew{
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 800;
+}
+
+#page{
+    position: relative;
+    min-width: 100%;
+}
+
+#menu{
+    position: absolute;
+    width: 270px;
+    bottom: 0;
+    right: 0;
+    color: #999;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #f6f6f6;
+    z-index: 2000;
 }
