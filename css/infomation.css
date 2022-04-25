@@ -1,63 +1,55 @@
-#base-panel{
+head, body{
+    margin: 0;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+#base-panel{
     position: absolute;
     top: 0px;
     left: 0px;
+    background-color: #302725;
     height: 100%;
-    width: 80px;
-    background-color: #211c23;
+    width: 90px;
+}
+
+#base-panel .items{
+    position: relative;
 }
 
 #base-panel .items .item{
-    padding: 5px 0px;
     text-align: center;
+    padding: 5px 0px;
+    cursor: pointer;
+    position: relative;
+    color: rgba(255, 255, 255, 0.3);
 }
 
-#base-panel .item .image{
+#base-panel .image{
     height: 51px;
-    overflow: hidden;
-    padding: 0;
 }
 
-#base-panel .item .inner{
+#base-panel .image .inner{
     width: 32px;
     height: 32px;
     margin: auto;
     margin-top: 10px;
-    overflow: hidden;
 }
 
-#base-panel .item .image img{
+#base-panel .image .inner img{
     width: 32px;
     height: 32px;
     border-radius: 16px;
-    background-color: white;
+    display: block;
+    background-color: #fff;
 }
 
-.items .item .icon{
-    padding: 10px 0px 3px;
+#base-panel .items .item .icon{
+    padding: 10px 0px;
+    margin-bottom: 5px;
 }
 
-.item .icon span{
-    background-color: #888;
-    border-radius: 16px;
-}
-
-.info{
-    padding-bottom: 20px;
-}
-
-.info span{
-    padding: 0 8px 15px;
-    font-size: 11px;
-    font-weight: bold;
-    color: #888;
-}
-
-.footer{
-    position:absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: white;
+#base-panel .items .item .info{
+    padding: 0px 5px 12px;
+    font-size: 14px;
 }
