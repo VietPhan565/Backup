@@ -17,7 +17,7 @@ head, body{
     position: relative;
 }
 
-#base-panel .items .item{
+#base-panel .item{
     text-align: center;
     padding: 5px 0px;
     cursor: pointer;
@@ -44,12 +44,12 @@ head, body{
     background-color: #fff;
 }
 
-#base-panel .items .item .icon{
-    padding: 10px 0px;
-    margin-bottom: 5px;
+#base-panel .item .icon{
+    padding: 8px 0px;
+    margin-bottom: 3px;
 }
 
-#base-panel .items .item .info{
+#base-panel .item .info{
     padding: 0px 5px 12px;
     font-size: 14px;
 }
