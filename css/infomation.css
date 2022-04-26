@@ -1,11 +1,11 @@
-head,
-body {
+head, body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
     height: 100%;
 }
 
-#base-panel {
+#base-panel{
     position: absolute;
     top: 0px;
     left: 0px;
@@ -14,11 +14,11 @@ body {
     width: 90px;
 }
 
-#base-panel .items {
+#base-panel .items{
     position: relative;
 }
 
-#base-panel .item {
+#base-panel .item{
     text-align: center;
     padding: 5px 0px;
     cursor: pointer;
@@ -26,18 +26,18 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-#base-panel .image {
+#base-panel .image{
     height: 51px;
 }
 
-#base-panel .image .inner {
+#base-panel .image .inner{
     width: 32px;
     height: 32px;
     margin: auto;
     margin-top: 10px;
 }
 
-#base-panel .image .inner img {
+#base-panel .image .inner img{
     width: 32px;
     height: 32px;
     border-radius: 16px;
@@ -45,64 +45,114 @@ body {
     background-color: #fff;
 }
 
-#base-panel .item .icon {
+#base-panel .item .icon{
     padding: 8px 0px;
     margin-bottom: 3px;
 }
 
-#base-panel .item .info {
+#base-panel .item .info{
     padding: 0px 5px 12px;
     font-size: 14px;
 }
 
 #base-panel .footer{
     position: absolute;
-    left: 0;
-    bottom: 0;
+    bottom: 0px;
+    left: 0px;
     width: 100%;
 }
 
 #document{
-    position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     height: 100%;
-    z-index: 100;
 }
 
 #master{
     position: absolute;
-    padding: 0;
-    top: 0;
-    right: 0;
+    top: 0px;
     left: 90px;
-    bottom: 0;
-    z-index: 1000;
+    right: 0px;
+    bottom: 0px;
+    padding: 0px;
 }
 
 #pagew{
     position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     overflow: hidden;
-    right: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 800;
 }
 
 #page{
     position: relative;
-    min-width: 100%;
+    min-height: 100%;
 }
 
 #menu{
     position: absolute;
     width: 270px;
-    bottom: 0;
-    right: 0;
+    top: 0px;
+    right: 0px;
+    /* bottom: 0px; */
     color: #999;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
     background-color: #f6f6f6;
-    z-index: 2000;
+}
+
+#menu .list .top{
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+#menu .top .name{
+    font-size: 24px;
+    color: #000;
+    font-weight: 300;
+}
+
+#menu .top .info{
+    font-size: 14px;
+    padding-top: 5px;
+    font-weight: normal;
+}
+
+#menu .title{
+    padding: 20px 20px 15px 20px;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #999;
+    border-top: 1px solid #eee;
+}
+
+#menu .box{
+    padding-bottom: 20px;
+}
+
+#menu .li{
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+    padding: 10px 10px 10px 48px;
+    margin: 5px 0px;
+}
+
+#menu .li .icon{
+    position: absolute;
+    top: 9px;
+    left: 20px;
+    overflow: hidden;
+    font-weight: normal;
+}
+
+#menu .li > .text{
+    margin-right: 50px;
+    font-size: 13px;
 }
