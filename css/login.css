@@ -1,20 +1,4 @@
-#master #page .login .box-wrap {
-    box-sizing: border-box;
-    max-width: 550px;
-    margin: auto;
-    padding: 20px;
-}
-
-#master #page .login .box-wrap .logo-base {
-    text-align: center;
-    margin-top: 10px;
-}
-
-#master #page .login .box-wrap .form-login {
-    font-family: 'Roboto', sans-serif;
-}
-
-#master #page .login .box-wrap .form-login h1 {
+#master #page .auth .box-wrap .form-login h1 {
     margin: 0px;
     padding-top: 35px;
     padding-bottom: 8px;
@@ -22,7 +6,7 @@
     font-size: 24px;
 }
 
-#master #page .login .box-wrap .form-login .sub-title {
+#master #page .auth .box-wrap .form-login .sub-title {
     text-align: center;
     font-size: 14px;
     color: gray;
@@ -30,18 +14,18 @@
     border-bottom: 2px solid #eee;
 }
 
-#master #page .login .box-wrap .form-login .form {
+#master #page .auth .box-wrap .form-login .form {
     padding: 30px 0px;
 }
 
-#master #page .login .box-wrap .form-login .form .label {
+#master #page .auth .box-wrap .form-login .form .label {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     padding-bottom: 10px;
 }
 
-#master #page .login .box-wrap .form-login .form .input input {
+#master #page .auth .box-wrap .form-login .form .input input {
     display: block;
     border: 0;
     box-sizing: border-box;
@@ -50,7 +34,7 @@
     border: 1px solid #d3d3d3;
 }
 
-#master #page .login .box-wrap .form-login .form .row {
+#master #page .auth .box-wrap .form-login .form .row {
     padding-bottom: 20px;
 }
 
@@ -58,7 +42,7 @@
     position: relative;
 }
 
-#master #page .login .box-wrap .form-login .form .label .forgot-pass {
+#master #page .auth .box-wrap .form-login .form .label .forgot-pass {
     cursor: pointer;
     color: #267CDE;
     font-weight: normal;
@@ -66,7 +50,7 @@
     font-size: 13px;
 }
 
-#master #page .login .box-wrap .form-login .form .row .checkbox {
+#master #page .auth .box-wrap .form-login .form .row .checkbox {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     color: gray;

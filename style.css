@@ -23,3 +23,15 @@ body {
     width: 600px;
     height: 100%;
 }
+
+#master #page .auth .box-wrap {
+    box-sizing: border-box;
+    max-width: 550px;
+    margin: auto;
+    padding: 20px;
+}
+
+#master #page .auth .box-wrap .logo-base {
+    text-align: center;
+    margin-top: 10px;
+}
